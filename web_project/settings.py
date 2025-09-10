@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-w-(_!lo^!g6c_8zh3rx!!@aodpea8%_r65uk+)6t_9(l%mw^2z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["http://tasksappback-env.eba-mg3k7kcg.us-east-1.elasticbeanstalk.com"]
+ALLOWED_HOSTS = ["tasksappback-env.eba-mg3k7kcg.us-east-1.elasticbeanstalk.com"]
 
 
 # Application definition
