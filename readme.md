@@ -2,7 +2,7 @@
 
 ## 1. Solicitas las envs
 
-Vas a necesitar estas 
+Vas a necesitar estas - solicitamelas por interno para que las puedas agregar en un archivo .env en la raiz del proyecto (no incluido en este repo)
 
 DB_HOST=
 DB_USER=
