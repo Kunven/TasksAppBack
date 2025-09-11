@@ -14,7 +14,7 @@ class Task(models.Model):
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
 
-  due_date = models.DateField(blank=True, null=True)
+  due_date = models.DateTimeField(blank=True, null=True)
   owner = models.IntegerField()
   class Meta:
     db_table = 'Task'
