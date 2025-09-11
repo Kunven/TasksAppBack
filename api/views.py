@@ -38,5 +38,9 @@ class UserView(APIView):
             return Response("Acceso Exitoso", status=200)
         except:
             return Response("Credenciales Incorrectas", status=401)
-            
+
+    def get(self, request):
+        items = Users.objects.all()
+        serializer = UserSerializer(items, many=True)
+        return Response(serializer.data)
         
