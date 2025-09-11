@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-w-(_!lo^!g6c_8zh3rx!!@aodpea8%_r65uk+)6t_9(l%mw^2z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["tasksappback-env.eba-mg3k7kcg.us-east-1.elasticbeanstalk.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-       'rest_framework',  
+    'rest_framework',  
     'api',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -137,3 +139,5 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
 }
+
+CORS_ALLOWED_ORIGINS = []
